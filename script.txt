@@ -1,0 +1,32 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+
+
+my $line;
+my $data;
+my $time;
+my $pubNum;
+my $user;
+my $status;
+
+
+open(FD,"/home/sschatzl/log.smbd") or die("Could Not Open File");
+
+foreach $line (<FD>){
+
+        if(index($line, 'make_connection') != -1) {
+                        print $line;
+                }
+        else if(index($line, 'connect to service') != -1){
+                print $
+                }
+
+
+
+
+
+}
+
